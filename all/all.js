@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+});
 // SLIDESHOW
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -188,7 +196,3 @@ document.querySelector('a[href="#reviews"]').addEventListener('click', function 
         behavior: 'smooth'
     });
 });
-
-
-
-
